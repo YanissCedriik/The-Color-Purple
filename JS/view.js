@@ -40,7 +40,7 @@ function updateView() {
 
 
       <div class="quickbar">
-        <button>Best Rated</button>
+        <button onclick="filterBestRating()">Best Rated</button>
         <button>New Movies</button>
         <button>My Favorites</button>
         <button>Add Movies +</button>
