@@ -54,7 +54,7 @@ const model = {
       },
       {
         title: "James Bond - Quantum Of Silence",
-        releaseDate: "1999",
+        releaseDate: "2008",
         genre: "Action, Spy",
         poster: "Assets/59001.webp",
         rating: 867,
@@ -73,7 +73,7 @@ const model = {
         releaseDate: "2006",
         genre: "Thriller, Comedy",
         poster: "Assets/61L3eGk45kL._AC_UF894,1000_QL80_.jpg",
-        rating: 926,
+        rating: 654,
         synopsis: "In a clever twist on slasher films, a group of high school friends becomes the target of a masked killer. As they navigate the rules of horror movie clichés, they must work together to survive the deadly game, blending suspense with dark humor."
       },
       {
@@ -161,7 +161,7 @@ const model = {
         releaseDate: "2023",
         genre: "Adventure",
         poster: "Assets/HRZN1_Character_Sam_VERT_MAIN_2764x4096_DOM.webp",
-        rating: 620,
+        rating: 881,
         synopsis: "An adventurous tale that follows a group of explorers as they venture into uncharted territories, facing both the beauty and dangers of the unknown."
       },
       {
@@ -257,7 +257,7 @@ const model = {
         releaseDate: "2023",
         genre: "Action, Fighter",
         poster: "Assets/creed3.jpg",
-        rating: 710,
+        rating: 932,
         synopsis: "Adonis Creed faces new challenges both in and out of the ring as he strives to prove himself as a champion while grappling with his past."
       },
       {
@@ -273,7 +273,7 @@ const model = {
         releaseDate: "1975",
         genre: "Thriller",
         poster: "Assets/jaws-alternative-movie-poster-movie-poster-boy.jpg",
-        rating: 870,
+        rating: 770,
         synopsis: "A great white shark terrorizes a beach town, prompting a police chief, a marine biologist, and a grizzled fisherman to hunt it down."
       },
       {
@@ -342,10 +342,10 @@ const model = {
       },
       {
         title: "James Bond - Skyfall",
-        releaseDate: "2023",
+        releaseDate: "2012",
         genre: "Action, Spy",
         poster: "Assets/movie-poster-12.jpg",
-        rating: 850,
+        rating: 932,
         synopsis: "James Bond's loyalty to M is tested as her past comes back to haunt her, leading to a showdown with a dangerous enemy."
       },
       {
@@ -473,7 +473,7 @@ const model = {
         releaseDate: "2022",
         genre: "Action",
         poster: "Assets/The-Batman-4.webp",
-        rating: 860,
+        rating: 931,
         synopsis: "Continuing his quest for justice, Batman must confront his own identity while unraveling a web of lies that threaten to destroy Gotham."
       },
       {

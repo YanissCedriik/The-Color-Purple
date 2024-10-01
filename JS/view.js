@@ -41,9 +41,10 @@ function updateView() {
 
       <div class="quickbar">
         <button onclick="filterBestRating()">Best Rated</button>
-        <button>New Movies</button>
-        <button>My Favorites</button>
-        <button>Add Movies +</button>
+        <button onclick="filterNewMovies()">New Movies</button>
+        <button onclick="resetFilter()">All Movies</button>
+        <button onclick="filterFavoriteMovies()">My Favorites</button>
+        <button onclick="addMovie()">Add Movies +</button>
       </div>
     
           <div class="mainContainer">${cardHTML}</div>

@@ -1,33 +1,64 @@
 //Functions
-drawMovieCards()
-function toggleHidden(i){
-    document.getElementsByClassName('bottomCard')[i].classList.toggle('hidden');
-            
+
+
+drawMovieCards(model.movies);
+function toggleHidden(i) {
+  document.getElementsByClassName("bottomCard")[i].classList.toggle("hidden");
 }
 
 
-function filterBestRating(){
-  return
+
+function resetFilter() {
+  drawMovieCards(model.movies);
+  updateView();
 }
 
-function addMovie(){
 
+
+function filterBestRating() {
+  let bestRatedMovies = [];
+  for (let i = 0; i < model.movies.length; i++) {
+    if (model.movies[i].rating > 870) {
+      bestRatedMovies.push(model.movies[i]);
+    }
+  }
+  drawMovieCards(bestRatedMovies);
+  updateView();
 }
 
 
-function drawMovieCards(){
+
+function addMovie() {}
+
+
+
+function filterNewMovies() {
+  let newestMovies = [];
+  for (let i = 0; i < model.movies.length; i++) {
+    if (model.movies[i].releaseDate > 2020) {
+      newestMovies.push(model.movies[i]);
+    }
+  }
+
+  drawMovieCards(newestMovies);
+  updateView();
+}
+
+
+
+function drawMovieCards(selectedArray) {
   cardHTML = "";
-    for (let i = 0; i < model.movies.length; i++) {  
-      cardHTML += /*HTML*/ `
+  for (let i = 0; i < selectedArray.length; i++) {
+    cardHTML += /*HTML*/ `
         
       <div onmouseenter="toggleHidden(${i})" onmouseleave="toggleHidden(${i})" class="movieCard">
-        <img src=${model.movies[i].poster} onerror="this.onerror=null; this.src='/Assets/fallbackDefault.jpg'">
-        <div class="movieTitle">${model.movies[i].title}</div>
-        <div class="movieInfo">${model.movies[i].genre} <span>${model.movies[i].releaseDate} | ${model.movies[i].rating}</span></div>
+        <img src=${selectedArray[i].poster} onerror="this.onerror=null; this.src='/Assets/fallbackDefault.jpg'">
+        <div class="movieTitle">${selectedArray[i].title}</div>
+        <div class="movieInfo">${selectedArray[i].genre} <span>${selectedArray[i].releaseDate} | ${selectedArray[i].rating}</span></div>
         <div class="bottomCard hidden">
-            <div class="movieDescription">${model.movies[i].synopsis}</div>
+            <div class="movieDescription">${selectedArray[i].synopsis}</div>
         </div>
       </div>
-        `
-      };
+        `;
+  }
 }
