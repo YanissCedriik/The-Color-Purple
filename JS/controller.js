@@ -1,7 +1,9 @@
 //Functions
-
-
 drawMovieCards(model.movies);
+
+
+
+
 function toggleHidden(i) {
   document.getElementsByClassName("bottomCard")[i].classList.toggle("hidden");
 }
@@ -13,17 +15,19 @@ function resetFilter() {
   updateView();
 }
 
-function customSearch(tempSearch){
+function customSearch(tempSearch) {
   let customKeywordSearch = [];
-    for (let i = 0; i < model.movies.length; i++) {
-      if (model.movies[i].title == tempSearch) {
-        customKeywordSearch.push(model.movies[i]);
-    };
+  const searchTerm = tempSearch.toLowerCase();
+
+  for (let i = 0; i < model.movies.length; i++) {
+    if (model.movies[i].title.toLowerCase().includes(searchTerm)) {
+      customKeywordSearch.push(model.movies[i]);
+    }
   }
+
   drawMovieCards(customKeywordSearch);
   updateView();
 }
-
 
 
 function filterUserSpecifiedMovies(filterValue){
@@ -37,6 +41,20 @@ function filterUserSpecifiedMovies(filterValue){
   updateView();
 }
 
+function addToFavorites(i) {
+  let movieToAdd = model.movies[i]
+
+  if (!model.favoriteMovies.includes(movieToAdd)) {
+    model.favoriteMovies.push(movieToAdd)
+  }
+}
+
+function filterFavoriteMovies(){
+  favoriteMovies = model.favoriteMovies
+
+    drawMovieCards(favoriteMovies)
+    updateView()
+}
 
 
 function filterBestRating() {
@@ -49,11 +67,6 @@ function filterBestRating() {
   drawMovieCards(bestRatedMovies);
   updateView();
 }
-
-
-
-function addMovie() {}
-
 
 
 function filterNewMovies() {
@@ -70,6 +83,9 @@ function filterNewMovies() {
 
 
 
+
+
+
 function drawMovieCards(selectedArray) {
   cardHTML = "";
   for (let i = 0; i < selectedArray.length; i++) {
@@ -81,7 +97,7 @@ function drawMovieCards(selectedArray) {
         <div class="movieInfo">${selectedArray[i].genre} <span>${selectedArray[i].releaseDate} | ${selectedArray[i].rating}</span></div>
         <div class="bottomCard hidden">
             <div class="movieDescription">${selectedArray[i].synopsis}</div>
-            <button onclick="addToFavorites()">Add To Favorites</button>
+            <button onclick="addToFavorites(${i})">Add To Favorites</button>
         </div>
       </div>
         `;

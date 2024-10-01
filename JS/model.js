@@ -2,7 +2,10 @@
 let cardHTML = "";
 
 const model = {
-    movies: [
+    
+  favoriteMovies: [],
+  
+  movies: [
       {
         title: "Deadpool",
         releaseDate: "2024",
