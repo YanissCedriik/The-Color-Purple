@@ -13,17 +13,17 @@ function updateView() {
   <div class="dropdown">
       <button class="dropbtn">Browse</button>
       <div class="dropdown-content">
-          <a onclick="filterUserSpesifiedMovies(this.value)" href="#">Action</a>
-          <a href="#">Animation</a>
-          <a href="#">Adventure</a>
-          <a href="#">Comedy</a>
-          <a href="#">Crime</a>
-          <a href="#">Drama</a>
-          <a href="#">Sci-Fi</a>
-          <a href="#">Spy</a>
-          <a href="#">Thriller</a>
-          <a href="#">Romance</a>
-          <a href="#">War</a>
+          <a onclick="filterUserSpecifiedMovies("Action")"    href="#">Action</a>
+          <a onclick="filterUserSpecifiedMovies("Animation")" href="#">Animation</a>
+          <a onclick="filterUserSpecifiedMovies("Adventure")" href="#">Adventure</a>
+          <a onclick="filterUserSpecifiedMovies("Comedy")"    href="#">Comedy</a>
+          <a onclick="filterUserSpecifiedMovies("Crime")"     href="#">Crime</a>
+          <a onclick="filterUserSpecifiedMovies("Drama")"     href="#">Drama</a>
+          <a onclick="filterUserSpecifiedMovies("Sci-Fi")"    href="#">Sci-Fi</a>
+          <a onclick="filterUserSpecifiedMovies("Spy")"       href="#">Spy</a>
+          <a onclick="filterUserSpecifiedMovies("Thriller")"  href="#">Thriller</a>
+          <a onclick="filterUserSpecifiedMovies("Romance")"   href="#">Romance</a>
+          <a onclick="filterUserSpecifiedMovies("War")"       href="#">War</a>
       </div>
   </div>
   <button>Home</button>

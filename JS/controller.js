@@ -13,14 +13,14 @@ function resetFilter() {
   updateView();
 }
 
-function filterUserSpesifiedMovies(filterValue){
-    let userSpesifiedMovies = [];
-  for (let i = 0; i < model.movies.length; i++) {
-    if (model.movies[i].genre == filterValue ) {
-      userSpesifiedMovies.push(model.movies[i]);
-    }
+function filterUserSpecifiedMovies(filterValue){
+    let userSpecifiedMovies = [];
+    for (let i = 0; i < model.movies.length; i++) {
+      if (model.movies[i].genre == filterValue) {
+        userSpecifiedMovies.push(model.movies[i]);
+    };
   }
-  drawMovieCards(userSpesifiedMovies);
+  drawMovieCards(userSpecifiedMovies);
   updateView();
 }
 
