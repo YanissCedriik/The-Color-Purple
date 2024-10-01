@@ -13,6 +13,19 @@ function resetFilter() {
   updateView();
 }
 
+function customSearch(tempSearch){
+  let customKeywordSearch = [];
+    for (let i = 0; i < model.movies.length; i++) {
+      if (model.movies[i].title == tempSearch) {
+        customKeywordSearch.push(model.movies[i]);
+    };
+  }
+  drawMovieCards(customKeywordSearch);
+  updateView();
+}
+
+
+
 function filterUserSpecifiedMovies(filterValue){
     let userSpecifiedMovies = [];
     for (let i = 0; i < model.movies.length; i++) {

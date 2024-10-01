@@ -30,7 +30,7 @@ function updateView() {
   <button><a href="userProfile.html">Profile</a></button>
 </header>
 
-<input type="text" placeholder="Search Movies..." />
+<input onchange="customSearch(this.value)" type="text" placeholder="Search Movies..." />
 
 <div class="featuredContent">
 
