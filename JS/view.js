@@ -13,7 +13,7 @@ function updateView() {
   <div class="dropdown">
       <button class="dropbtn">Browse</button>
       <div class="dropdown-content">
-          <a href="#">Action</a>
+          <a onclick="filterUserSpesifiedMovies(this.value)" href="#">Action</a>
           <a href="#">Animation</a>
           <a href="#">Adventure</a>
           <a href="#">Comedy</a>
