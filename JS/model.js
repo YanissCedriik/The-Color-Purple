@@ -78,10 +78,10 @@ const model = {
       },
       {
         title: "65 Million Years Ago",
-        releaseDate: "2012",
+        releaseDate: "2023",
         genre: "Action",
-        poster: "Assets/65.jfif",
-        rating: 296,
+        poster: "Assets/MV5BZjU2MjdjN2UtY2JlMC00MmVmLThhNDgtZjY1Y2FhNzRmY2IzXkEyXkFqcGc@._V1_.jpg",
+        rating: 396,
         synopsis: "In a prehistoric adventure, a group of explorers is transported back in time to the age of dinosaurs. As they battle for survival against fierce creatures and the elements, they uncover the mysteries of an ancient world."
       },
       {
@@ -112,7 +112,7 @@ const model = {
         title: "Black Panther",
         releaseDate: "2018",
         genre: "Action",
-        poster: "Assets/blackpanther.jfif",
+        poster: "Assets/blackpanther2.jpg",
         rating: 783,
         synopsis: "After the death of his father, T'Challa returns to Wakanda to take the throne as king. He must confront a formidable adversary, Erik Killmonger, who challenges his leadership and the future of the technologically advanced nation. The film explores themes of identity, heritage, and responsibility."
       },
@@ -128,7 +128,7 @@ const model = {
         title: "Little Miss Sunshine",
         releaseDate: "2023",
         genre: "Romance",
-        poster: "Assets/download.jfif",
+        poster: "Assets/littlemisssuns.jpg",
         rating: 656,
         synopsis: "This heartwarming story follows a dysfunctional family as they embark on a cross-country trip to support their young daughter, Olive, in her quest to win a beauty pageant. Along the way, they confront their own personal struggles, leading to moments of humor, love, and unexpected bonding."
       },
@@ -376,7 +376,7 @@ const model = {
         title: "Oppenheimer",
         releaseDate: "2023",
         genre: "Biography",
-        poster: "Assets/oppenheimer.jfif",
+        poster: "Assets/oppenheimer-movie-poster-113945.jpg",
         rating: 900,
         synopsis: "A biographical drama that chronicles the life of J. Robert Oppenheimer, the father of the atomic bomb, and the ethical dilemmas he faced."
       },

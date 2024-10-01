@@ -41,6 +41,13 @@ button{
     border-radius: 4px;
     color: #AC0CD4;
     font-size: 1.4em;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: #AC0CD4;
 }
 
 button:hover{

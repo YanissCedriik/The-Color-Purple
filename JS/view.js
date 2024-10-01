@@ -27,7 +27,7 @@ function updateView() {
       </div>
   </div>
   <button>Home</button>
-  <button>Profile</button>
+  <button><a href="userProfile.html">Profile</a></button>
 </header>
 
 <input type="text" placeholder="Search Movies..." />
