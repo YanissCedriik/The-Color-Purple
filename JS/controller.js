@@ -68,6 +68,7 @@ function drawMovieCards(selectedArray) {
         <div class="movieInfo">${selectedArray[i].genre} <span>${selectedArray[i].releaseDate} | ${selectedArray[i].rating}</span></div>
         <div class="bottomCard hidden">
             <div class="movieDescription">${selectedArray[i].synopsis}</div>
+            <button onclick="addToFavorites()">Add To Favorites</button>
         </div>
       </div>
         `;
