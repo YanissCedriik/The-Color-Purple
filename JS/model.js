@@ -509,7 +509,7 @@ const model = {
         genre: "Action",
         poster: "Assets/civilwar.webp",
         rating: 800,
-        synopsis: "As nations collide, heroes must choose sides in a conflict that will determine the fate of the world, challenging their loyalties and beliefs."
+        synopsis: "A journey across a dystopian future America, following a team of military-embedded journalists as they race against time to reach DC before rebel factions descend upon the White House."
       },
       {
         title: "Thor - The Dark World",
